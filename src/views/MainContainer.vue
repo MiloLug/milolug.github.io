@@ -38,6 +38,7 @@ $rounding_small: 5px;
   align-items: center;
   flex-direction: column;
   overflow: auto;
+  overflow-x: hidden;
 
   &>.container{
     position: absolute;
