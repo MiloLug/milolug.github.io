@@ -91,6 +91,16 @@ $rounding_small: 5px;
   }
 }
 
+@media screen and (min-width: 1800px){
+  #main-container > .container:not(.out-content){
+    left: calc((100% - 900px)/2);
+  }
+}
+@media screen and (max-width: 1600px){
+  #main-container > .container:not(.out-content){
+    left: calc((100% - 800px)/2);
+  }
+}
 
 @media screen and (max-width: 1580px){
   #main-container > .container.out-content{
@@ -116,7 +126,7 @@ $rounding_small: 5px;
 @media screen and (max-width: 1320px){
   #main-container > .container, #main-container > .container.out-content{
     min-width: 900px;
-    left: auto;
+    left: calc((100% - 900px)/2) !important;
   }
 }
 
@@ -125,6 +135,7 @@ $rounding_small: 5px;
     min-width: 100%;
     border-radius: 0;
     margin: 0;
+    left: 0 !important;
 
     header{
       border-radius: 0;
