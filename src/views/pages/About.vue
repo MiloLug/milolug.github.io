@@ -39,6 +39,13 @@
       <br>
       <br>
       You can view all these on the main page (<Link href="/" text="works" :use-router="true" @click="goToBlock('header')"/>).
+      <br>
+      <br>
+      <Link
+        :inline="false"
+        description="My GitHub profile"
+        href="https://github.com/MiloLug"
+      />
     </div>
 
     <div class="info-block">

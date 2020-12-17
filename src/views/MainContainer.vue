@@ -43,17 +43,15 @@ $rounding_small: 5px;
   &>.container{
     position: absolute;
     width: 50%;
-    left: 25%;
-    max-width: 900px;
-    min-width: 800px;
+
+    max-width: 1250px;
+    min-width: 1100px;
     margin: 20px 0px;
     min-height: 50%;
 
     background: $plane_bg;
     border-radius: $rounding_small;
     box-shadow: 0 20px 60px 0 rgba(186,200,227,.1),0 16px 36px 0 rgba(186,200,227,.3);
-    
-    transition: left .3s;
 
     header {
       widows: 100%;
@@ -92,42 +90,9 @@ $rounding_small: 5px;
   }
 }
 
-@media screen and (min-width: 1800px){
-  #main-container > .container:not(.out-content){
-    left: calc((100% - 900px)/2);
-  }
-}
-@media screen and (max-width: 1600px){
-  #main-container > .container:not(.out-content){
-    left: calc((100% - 800px)/2);
-  }
-}
-
-@media screen and (max-width: 1580px){
-  #main-container > .container.out-content{
-    left: 20%;
-  }
-}
-@media screen and (max-width: 1495px){
-  #main-container > .container.out-content{
-    left: 15%;
-  }
-}
-@media screen and (max-width: 1400px){
-  #main-container > .container.out-content{
-    left: 10%;
-  }
-}
-@media screen and (max-width: 1400px){
-  #main-container > .container.out-content{
-    left: 10%;
-  }
-}
-
 @media screen and (max-width: 1320px){
   #main-container > .container, #main-container > .container.out-content{
     min-width: 900px;
-    left: calc((100% - 900px)/2) !important;
   }
 }
 

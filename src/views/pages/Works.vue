@@ -117,7 +117,6 @@ Technologies used: PHP (back-end, routing), VueJS (partially)`,
 
 #works{
   padding: 20px 70px;
-  min-width: 150%;
 
   .work{
     margin: 20px 0px;
@@ -125,15 +124,14 @@ Technologies used: PHP (back-end, routing), VueJS (partially)`,
 
     .work-row{
       display: flex;
-      min-width: calc(100% + 140px);
       
       .description{
-        max-width: calc(66.666% - 80px);
-        min-width: calc(66.666% - 80px);
+        width: 100%;
       }
 
       .Image{
-        width: calc(33.333% - 50px);
+        min-width: 33.333%;
+        max-width: 33.333%;
         margin-left: 30px;
         min-width: 265px;
       }
@@ -141,31 +139,7 @@ Technologies used: PHP (back-end, routing), VueJS (partially)`,
   }
 }
 
-@media screen and (max-width: 1320px){
-  #works{
-    min-width: 100%;
 
-    .description.full{
-      max-width: calc(100% - 80px) !important;
-      min-width: calc(100% - 80px) !important;
-    }
-  }
-}
-
-@media screen and (max-width: 950px){
-  #works{
-    padding: 20px 40px;
-    .work-row{
-      min-width: calc(100% + 20px) !important;
-
-      .description{
-        max-width: unset !important;
-        min-width: unset !important;
-        width: 100%;
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 750px){
   #works{
